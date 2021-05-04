@@ -10,7 +10,7 @@ const sampleHealthCheck = (req: Request, res: Response, next: NextFunction) => {
     //     message: 'Ping'
     // })
 
-    res.render('index', { title: 'descargasxtech' })
+    res.render('index', { title: 'Node Typescript Express Server' })
 }
 
 export default { sampleHealthCheck }

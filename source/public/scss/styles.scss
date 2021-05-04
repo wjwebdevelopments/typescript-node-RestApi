@@ -5,4 +5,12 @@
  *  Build fast, responsive sites with Bootstrap
  */
 
-// @import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+// Google Fonts Open Sans
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+
+@import "utilities/normalize";
+
+@import "variables";
+@import "globales";
