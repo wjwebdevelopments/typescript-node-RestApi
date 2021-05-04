@@ -3,6 +3,7 @@ import express from 'express'
 import logging from './config/logging'
 import config from './config/config'
 import sampleRoutes from './routes/sample'
+import path from 'path'
 
 const NAMESPACE = 'Server'
 const router = express()
@@ -21,6 +22,13 @@ router.use((req, res, next) => {
 /** Parse the request */
 router.use(express.urlencoded({ extended: false }))
 router.use(express.json())
+
+/** Static files */
+router.use('/public', express.static(path.join(__dirname, '../source/public')))
+
+/** Settings */
+router.set('view engine', 'pug')
+router.set('views', path.resolve(__dirname, '../source/views'))
 
 /** Rules of our API */
 router.use((req, res, next) => {
