@@ -2,8 +2,10 @@ import http from 'http'
 import express from 'express'
 import logging from './config/logging'
 import config from './config/config'
-import sampleRoutes from './routes/sample'
 import path from 'path'
+
+/** Routes */
+import inicioRoutes from './routes/inicio.route'
 
 const NAMESPACE = 'Server'
 const router = express()
@@ -44,7 +46,7 @@ router.use((req, res, next) => {
 })
 
 /** Routes */
-router.use('/sample', sampleRoutes)
+router.use('/', inicioRoutes)
 
 /** Handling error */
 router.use((req, res, next) => {

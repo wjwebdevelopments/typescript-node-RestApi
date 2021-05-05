@@ -1,0 +1,9 @@
+.jumbotron {
+    border-radius: $br-light;
+    background-image: url(../img/bg-banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 22rem;
+    margin: $separacion-y;
+    padding: 4rem 2rem;
+}

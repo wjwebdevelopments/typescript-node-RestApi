@@ -9,7 +9,12 @@ html {
 
 body {
     font-size: 1.6rem;
+    background-color: $bg-dark;
     font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -19,4 +24,14 @@ h1, h2, h3, h4, h5, p {
 
 h1 {
     font-weight: $fw-bold;
+}
+
+.navbar {
+    background-color: $bg-blue;
+}
+
+section.container .row {
+    background-color: $bg-light;
+    margin: 1rem auto;
+    border-radius: $br-light;
 }

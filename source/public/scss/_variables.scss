@@ -1,8 +1,27 @@
+// Colors
+$black: #373a3c; 
+$gray: #e9ecef;
+$blue: #2780e3;
+$orange: #ff7518;
+$white: #ffffff;
 
-
+// Backgrounds
+$bg-gray: $gray;
+$bg-blue: $blue;
+$bg-dark: $black;
+$bg-orange: $orange;
+$bg-light: $white;
 
 // Fonts
 $fw-light: 300;
 $fw-normal: 400;
 $fw-bold: 700;
 $fw-extra-bold: 800;
+
+$ts-normal: 1.6rem;
+
+// Borders
+$br-light: 5px;
+
+// Generales
+$separacion-y: 1rem 0;

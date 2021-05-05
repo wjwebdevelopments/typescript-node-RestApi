@@ -1,3 +1,8 @@
+//- Includes
+include mixins/top
+include mixins/banner
+include mixins/navigation
+
 doctype 
 html
     head
@@ -5,5 +10,15 @@ html
         link(href="/public/dist/styles.bundle.css" rel="stylesheet")
         link(href="/public/dist/icofont.min.css" rel="stylesheet")
     body 
+
+        //- Top
+        +top
+
+        //- Banner
+        +banner 
+
+        //- Navigation
+        +navigation
+        
         block content
         script(src="/public/dist/main.bundle.js")

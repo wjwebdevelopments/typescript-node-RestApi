@@ -1,0 +1,22 @@
+.btn-orange {
+    color: #fff;
+    background-color: #ff7518;
+    border-color: #ff7518;
+}
+
+.btn-orange:focus, .btn-orange.focus {
+    color: #fff;
+    background-color: #f16100;
+    border-color: #e45c00;
+    box-shadow: 0 0 0 0.2rem rgb(255 138 59 / 50%);
+}
+
+.btn-orange:not(:disabled):not(.disabled):active:focus, .btn-orange:not(:disabled):not(.disabled).active:focus, .show > .btn-orange.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgb(255 138 59 / 50%);
+}
+
+.btn-orange:not(:disabled):not(.disabled):active, .btn-orange:not(:disabled):not(.disabled).active, .show > .btn-orange.dropdown-toggle {
+    color: #fff;
+    background-color: #e45c00;
+    border-color: #d75700;
+}
